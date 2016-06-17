@@ -1,0 +1,147 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Using Images on the web</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <style>
+        body {
+            background: #212121;
+            color: #ffffff;
+            font-family: sans-serif;
+            background-image: url(star.png);
+            background-repeat: repeat-y;
+            background-position: left;
+        }
+        
+        .container {
+            max-width: 960px;
+            margin: 15px auto;
+            padding: 15px;
+            text-align: center;
+        }
+        
+        h1,
+        h2,
+        h3 {
+            font-family: cursive;
+            color: #FF9800;
+            text-align: center;
+        }
+        
+        a {
+            color: #D1C4E9;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.5em;
+        }
+        
+        a:hover {
+            color: #FFFFFF;
+            text-decoration: underline;
+        }
+        
+        dt {
+            color: #D1C4E9;
+            font-weight: 400;
+        }
+        
+        dd {
+            color: #FFFFFF;
+        }
+        
+        .material-icons {
+            font-family: 'Material Icons';
+            font-weight: normal;
+            font-style: normal;
+            font-size: 24px;
+        }
+        
+        #back1 {
+            background-image: url('star.png');
+            background-repeat: no-repeat;
+            background-position: left;
+            min-height: 250px;
+        }
+        
+        #back2 {
+            background-image: url('star.png');
+            background-repeat: repeat-x;
+            min-height: 250px;
+            color: #212121;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="container">
+        <h1>Using and formatting images on the web</h1>
+    </header>
+    <div class="container">
+        <h2>Icons</h2>
+        <p><a href="http://google.github.io/material-design-icons/#icon-font-for-the-web">Google Material Design Icons</a></p>
+        <p><a href="https://design.google.com/icons/">All the fonts</a></p>
+        <p style="text-align: center;"></p>
+        <i class="material-icons">accessibility</i> &nbsp;&nbsp;&nbsp;
+        <i class="material-icons">android</i> &nbsp;&nbsp;&nbsp;
+        <i class="material-icons">favorite</i> &nbsp;&nbsp;&nbsp;
+        <i class="material-icons">copyright</i> &nbsp;&nbsp;&nbsp;
+        <i class="material-icons">face</i> &nbsp;&nbsp;&nbsp;
+        <i class="material-icons">thumb_up</i> &nbsp;&nbsp;&nbsp;
+        <i class="material-icons">thumb_down</i> &nbsp;&nbsp;&nbsp;
+        <i class="material-icons">queue_music</i> &nbsp;&nbsp;&nbsp;
+        <i class="material-icons">call_end</i> &nbsp;&nbsp;&nbsp;
+        <i class="material-icons">chat_bubble</i> &nbsp;&nbsp;&nbsp;
+        <i class="material-icons">weekend</i> &nbsp;&nbsp;&nbsp;
+
+
+    </div>
+    <div class="container" id="back1">
+        <h2>Background Images 1</h2>
+        <p>If you are going to use a background image, you may not want it to repeat.</p>
+        <p>Why would you use a background image instead of a normal image?
+            <br/> Because they are for visual effect only and have no meaning. They will be ignored by browsers for the blind.</p>
+    </div>
+
+    <div class="container" id="back2">
+        <h2>Background Images 2</h2>
+        <p>Please be very careful when using background images. It is very hard to read text on top of an image.</p>
+    </div>
+
+
+    <div class="container" style="text-align:left">
+        <h2>Image formats</h2>
+        <dl>
+            <dt>JPG</dt>
+            <dd>Jpeg or jpg, this file format is best used for photographs. It is lossy, if you save it to a lower resolution you will permanantly lose information.</dd>
+            <dt>GIF</dt>
+            <dd>Used for drawings and clip art. Allows a transparent background. Can use simple animation. 8 bit color.</dd>
+            <dt>PNG</dt>
+            <dd>Supports 8 or 24 bit color, can use for photos or drawings, supports transparency and animation. Largest of the three file types.</dd>
+            <dt>SVG</dt>
+            <dd>Line drawings, Illustrator can create. Small file size.</dd>
+        </dl>
+
+    </div>
+    <div class="container" style="text-align:left">
+
+        <h2>Image Alignment</h2>
+        <img src="star.png" alt="star" style="float:left;">
+        <p>You can &quot;float&quot; an image to the left or to the right. This is different than simply aligning left or right. When you float an image, it breaks the styling order of the web page, so instead of listing one element right after another, the next element fill &quot;float &quot; up next to the floated element. When you want to go back to the normal order, you will have to clear the float.</p>
+        <p style="clear: both;">Clearing the float</p>
+        <img src="star.png" alt="star" style="float: right;">
+        <p>Floating to the Right.</p>
+        <p style="clear: right">Clearing the float</p>
+    </div>
+    <div class="container">
+        <h2>Making images responsive</h2>
+        <img src="star.png" alt="star" style="width: 50%; height: auto;">
+        <p>By setting the width of an image to a percent of the size of the containing div, and letting the height be auto, if you resize the page, the image will resize.</p>
+    </div>
+
+</body>
+
+</html>
